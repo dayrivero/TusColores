@@ -1,0 +1,319 @@
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+/*Fonts*/
+/*Colors*/
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+/*Fonts*/
+/*Colors*/
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+/*Fonts*/
+/*Colors*/
+/*$screen-xs-min: 576px;
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 1200px;
+$screen-xl-min: 1200px;
+$screen-xxl-min: 1400px;
+
+@mixin breakpoint($size) {
+  @if $size == small {
+    @media only screen and (min-width: $screen-xs-min) {
+        @content;
+    }
+  }
+  @else if $size == med-small {
+    @media only screen and (min-width: $screen-sm-min) {
+        @content;
+    }
+  }
+  @else if $size == med {
+    @media only screen and (min-width: $screen-md-min) {
+        @content;
+    }
+  }
+ @else if $size == large {
+    @media only screen and (min-width: $screen-lg-min) {
+        @content;
+    }
+  }
+  @else if $size == x-large {
+    @media only screen and (min-width: $screen-xl-min) {
+        @content;
+    }
+  }
+  @else if $size == xx-large {
+    @media only screen and (min-width: $screen-xxl-min) {
+        @content;
+    }
+  }
+}*/
+.banner-full {
+  background-color: #e2c12f;
+  color: #2D0404;
+}
+.banner-full .banner1-ayudar {
+  padding: 0px 0px;
+}
+.banner-full .banner1-ayudar .cont-banner {
+  padding-left: 18% !important;
+  padding-right: 8% !important;
+}
+.banner-full .banner1-ayudar .cont-banner .banner-h1 {
+  color: #2D0404;
+  font-size: 40px;
+  padding-bottom: 10%;
+  padding-top: 10%;
+}
+.banner-full .banner1-ayudar .cont-banner .boton-body {
+  color: #2D0404;
+  border-color: #2D0404;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 14px;
+  padding: 2% 4%;
+}
+.banner-full .banner1-ayudar .cont-banner .boton-body:hover {
+  background-image: linear-gradient(to right, #2182f1, #F45366, #e2c12f);
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+.banner2-ayudar {
+  height: 100%;
+  background: url(../imagenes/nocolor.svg) no-repeat center;
+  background-size: cover;
+}
+
+.section2-1-ayudar {
+  padding: 0px 0px;
+}
+.section2-1-ayudar .cont-section {
+  padding-left: 18% !important;
+  padding-right: 8% !important;
+}
+.section2-1-ayudar .cont-section .section-h1 {
+  color: #2D0404;
+  font-size: 40px;
+  padding-bottom: 8%;
+  padding-top: 3%;
+}
+.section2-1-ayudar .cont-section .item-content {
+  padding-right: 10%;
+}
+.section2-1-ayudar .cont-section .item-content h1 {
+  font-size: 30px;
+}
+.section2-1-ayudar .cont-section .item-content .item-1-a {
+  color: #F45366;
+}
+.section2-1-ayudar .cont-section .item-content .item-2-a {
+  color: #1AC63F;
+}
+.section2-1-ayudar .cont-section .item-content .item-3-a {
+  color: #8753F4;
+}
+.section2-1-ayudar .cont-section .item-content .item-4-a {
+  color: #2182f1;
+}
+.section2-1-ayudar .cont-section .item-content p {
+  color: #717171;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.section2-2-ayudar {
+  height: 100%;
+  background: url(../imagenes/ayudar-2.svg) no-repeat center;
+  background-size: cover;
+}
+
+.section3-1-ayudar {
+  padding: 0px 0px;
+  background-color: #F6F6F6;
+  height: 100vh;
+}
+.section3-1-ayudar .cont-section {
+  padding-left: 18% !important;
+  padding-right: 8% !important;
+}
+.section3-1-ayudar .cont-section .logo-ayudar {
+  padding-top: 10%;
+}
+.section3-1-ayudar .cont-section .sec3-img-ayudar {
+  padding-top: 4%;
+}
+.section3-1-ayudar .cont-section .section-h1-3 {
+  color: #2D0404;
+  font-size: 40px;
+  padding-top: 8%;
+}
+
+.section3-2-ayudar {
+  background-color: #8753F4;
+  color: #FFFFFF;
+  height: 100vh;
+}
+.section3-2-ayudar h2 {
+  font-size: 40px;
+  color: #FFFFFF;
+  padding-left: 10%;
+  padding-top: 20%;
+  padding-bottom: 4%;
+}
+.section3-2-ayudar .form-content {
+  width: 85%;
+  padding-left: 10%;
+}
+.section3-2-ayudar .form-content .form-label {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+}
+.section3-2-ayudar .form-content .form-control {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #717171;
+  letter-spacing: 1px;
+}
+
+/*MENU*/
+.full-menu {
+  background: white;
+  color: rgba(71, 71, 71, 0.089);
+  box-shadow: 0 0 14px 14px;
+  height: 70px;
+}
+
+.navbar-brand {
+  display: flex;
+  justify-content: right;
+  align-items: flex-start;
+  padding: 0 0 0 3%;
+}
+
+.nav-link {
+  color: #2D0404 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: normal;
+  padding-right: 1.8rem !important;
+}
+
+.nav-link:hover {
+  color: #F45366 !important;
+}
+
+.navbar-nav {
+  padding: 0 3% 0 0;
+}
+
+/*FIN MENU*/
+/*INICIO HOME*/
+.cols {
+  padding: 0px 0px;
+}
+
+.cols2 {
+  height: 100%;
+  background: url(../imagenes/banner.svg) no-repeat center;
+  background-size: cover;
+}
+
+.cols3 {
+  height: 100%;
+  background: url(../imagenes/gif-iniciativa.gif) no-repeat center;
+  background-size: cover;
+}
+
+.cols4 {
+  height: 100%;
+  background: url(../imagenes/banner.svg) no-repeat center;
+  background-size: cover;
+}
+
+.cont-bannerh {
+  padding-left: 18% !important;
+  padding-right: 8% !important;
+}
+
+.cont-sectionh {
+  padding-left: 18% !important;
+  padding-right: 16% !important;
+}
+
+.cont-bannerh h1 {
+  color: #2D0404 !important;
+  font-size: 42px !important;
+  padding-bottom: 10%;
+  padding-top: 10%;
+}
+
+.cont-sectionh h1 {
+  color: #F45366 !important;
+  font-size: 42px !important;
+  padding-bottom: 5%;
+  padding-top: 10%;
+}
+
+.cont-sectionh p {
+  color: #646464;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  padding-bottom: 6%;
+}
+
+.btn-home1 {
+  color: #2D0404;
+  border-color: #2D0404;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 14px;
+  padding: 2% 4%;
+}
+
+.btn-home1:hover {
+  background-image: linear-gradient(to right, #2182f1, #F45366, #e2c12f);
+  color: white;
+  border-color: white;
+}
+
+/*FIN HOME*/
+
+/*404*/
+.colserror {
+  padding: 0px 0px;
+}
+
+.colserror2 {
+  height: 100%;
+  background: url(../imagenes/404img.svg) no-repeat center;
+  background-size: cover;
+}
+
+.cont-bannerh {
+  padding-left: 18% !important;
+  padding-right: 8% !important;
+}
+
+/*404*/
+body {
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/*# sourceMappingURL=style.css.map */
