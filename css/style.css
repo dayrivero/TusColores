@@ -217,7 +217,7 @@ header .logo {
 
 @keyframes slide_left {
   0% {
-    transform: translateX(-30px);
+    transform: translateX(-32px);
     opacity: 0;
   }
   100% {
