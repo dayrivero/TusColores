@@ -17,39 +17,32 @@
   </head>
   <body>
 
-      <!-- INICIO MENU-->
+      
+    <!-- INICIO MENU -->
+    <section class="navbar">
         <header>
-            <nav class="full-menu navbar navbar-expand-lg navbar-light bg-light fixed-top">
-                <div class="container-fluid">
-                <a class="navbar-brand mr-auto" href="../index.html">
-                    <img src="../imagenes/logo-full.svg" alt="lala">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">INICIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/error404.html">GLOSARIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">PERSONAS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">RECURSOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/ayudar.html">AYUDAR</a>
-                    </li>
-                    </ul>
-                </div>
-                </div>
-            </nav>
+            <a class="logo" href="../index.html">
+                <img src="../imagenes/logo-full.svg" alt="lala">
+            </a>
+            <div class="toggle"></div>
+            <ul class="navigation">
+                <li><a href="../index.html" style="--i:1" class="active">INICIO</a></li>
+                <li><a href="../pages/error404.html" style="--i:2">GLOSARIO</a></li>
+                <li><a href="../pages/personas.html" style="--i:3">PERSONAS</a></li>
+                <li><a href="#" style="--i:4">RECURSOS</a></li>
+                <li><a href="../pages/ayudar.html" style="--i:5">AYUDAR</a></li>
+            </ul>
         </header>
-    <!-- FIN MENU -->
+      </section>
+      <script>
+        const menuToggle = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.onclick = function() {
+          menuToggle.classList.toggle('active')
+          navigation.classList.toggle('active')
+        }
+      </script>
+      <!-- FIN MENU -->
 
     <!-- INCIO BANNER -->
         <section class="parallax-personas">
