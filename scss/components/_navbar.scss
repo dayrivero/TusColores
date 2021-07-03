@@ -102,7 +102,7 @@ header ul li a:hover {
         right: 20px;
         width: 40px;
         height: 40px;
-        background: #FFFFFF url(./imagenes/menu.svg);
+        background: #FFFFFF url(../imagenes/menu.svg);
         border-radius: 5px;
         border: solid $brown 2px;
         background-size: 22px;
@@ -112,7 +112,7 @@ header ul li a:hover {
         z-index: 6;
     }
     .toggle.active {
-        background: #FFFFFF url(./imagenes/menu-close.svg);
+        background: #FFFFFF url(../imagenes/menu-close.svg);
         background-size: 22px;
         background-position: center;
         background-repeat: no-repeat;
