@@ -55,6 +55,8 @@ $screen-xxl-min: 1400px;
 }*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 .banner-full {
   background-color: #e2c12f;
   color: #2D0404;
@@ -317,6 +319,76 @@ header ul li a:hover {
     background-size: 22px;
     background-position: center;
     background-repeat: no-repeat;
+  }
+}
+/*Fonts*/
+/*Fonts*/
+/*Colors*/
+footer {
+  padding: 30px 20px;
+  color: #FFFFFF;
+  background-color: #2B2828;
+  width: 100%;
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+  padding-top: 2%;
+}
+
+.simple-footer ul {
+  list-style: none;
+  margin-bottom: 25px;
+  justify-content: center;
+}
+
+.simple-footer li {
+  padding: 0 15px;
+  margin-bottom: 0;
+}
+
+.footer-list a {
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: white;
+}
+
+.simple-footer p {
+  text-align: center;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 650px) {
+  .sm-iconw {
+    width: 24px;
+    height: 24px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .logofooter {
+    width: 90%;
+  }
+
+  .simple-footer p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    width: 300px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    padding-top: 10px;
+    margin: 1px 80px;
+    line-height: 24px;
   }
 }
 /*INICIO HOME*/
