@@ -4,16 +4,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 /*Fonts*/
 /*Colors*/
+/*Breakpoints*/
 /*Fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 /*Fonts*/
 /*Colors*/
+/*Breakpoints*/
 /*Fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 /*Fonts*/
 /*Colors*/
+/*Breakpoints*/
 /*$screen-xs-min: 576px;
 $screen-sm-min: 576px;
 $screen-md-min: 768px;
@@ -53,13 +56,22 @@ $screen-xxl-min: 1400px;
     }
   }
 }*/
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+/*Fonts*/
+/*Colors*/
+/*Breakpoints*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 .banner-full {
-  background-color: #e2c12f;
+  background-color: #f1e5ad;
   color: #2D0404;
+}
+.banner-full .row-ayudar {
+  margin: 0;
 }
 .banner-full .banner1-ayudar {
   padding: 0px 0px;
@@ -69,7 +81,6 @@ $screen-xxl-min: 1400px;
   padding-right: 8% !important;
 }
 .banner-full .banner1-ayudar .cont-banner .banner-h1 {
-  color: #2D0404;
   font-size: 40px;
   padding-bottom: 10%;
   padding-top: 10%;
@@ -95,105 +106,166 @@ $screen-xxl-min: 1400px;
   background-size: cover;
 }
 
-.section2-1-ayudar {
+/*---------------*/
+.pasos-ayudar {
+  background: #FFFFFF;
+}
+.pasos-ayudar .row-pasos-ayudar {
+  margin: 0;
+}
+.pasos-ayudar .pasos1-ayudar {
   padding: 0px 0px;
 }
-.section2-1-ayudar .cont-section {
+.pasos-ayudar .pasos1-ayudar .cont-pasos-ayudar {
   padding-left: 18% !important;
   padding-right: 8% !important;
 }
-.section2-1-ayudar .cont-section .section-h1 {
-  color: #2D0404;
+.pasos-ayudar .pasos1-ayudar .cont-pasos-ayudar .pasos-h2 {
   font-size: 40px;
-  padding-bottom: 8%;
-  padding-top: 3%;
+  padding-bottom: 5%;
+  padding-top: 0;
+  color: #2D0404;
 }
-.section2-1-ayudar .cont-section .item-content {
-  padding-right: 10%;
-}
-.section2-1-ayudar .cont-section .item-content h1 {
-  font-size: 30px;
-}
-.section2-1-ayudar .cont-section .item-content .item-1-a {
+.pasos-ayudar .pasos1-ayudar .cont-pasos-ayudar .item-1-a {
   color: #F45366;
+  padding-bottom: 10px;
 }
-.section2-1-ayudar .cont-section .item-content .item-2-a {
+.pasos-ayudar .pasos1-ayudar .cont-pasos-ayudar .item-2-a {
   color: #1AC63F;
+  padding-bottom: 10px;
 }
-.section2-1-ayudar .cont-section .item-content .item-3-a {
+.pasos-ayudar .pasos1-ayudar .cont-pasos-ayudar .item-3-a {
   color: #8753F4;
+  padding-bottom: 10px;
 }
-.section2-1-ayudar .cont-section .item-content .item-4-a {
+.pasos-ayudar .pasos1-ayudar .cont-pasos-ayudar .item-4-a {
   color: #2182f1;
+  padding-bottom: 10px;
 }
-.section2-1-ayudar .cont-section .item-content p {
+.pasos-ayudar .pasos1-ayudar .cont-pasos-ayudar .item-content p {
   color: #717171;
+  width: 90%;
   font-size: 16px;
   letter-spacing: 1px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.section2-2-ayudar {
+.pasos2-ayudar {
   height: 100%;
   background: url(../imagenes/ayudar-2.svg) no-repeat center;
   background-size: cover;
 }
 
-.section3-1-ayudar {
-  padding: 0px 0px;
-  background-color: #F6F6F6;
-  height: 100vh;
+.contactus {
+  background: #F6F6F6;
+  padding: 6% 0 8% 0;
 }
-.section3-1-ayudar .cont-section {
-  padding-left: 18% !important;
-  padding-right: 8% !important;
-}
-.section3-1-ayudar .cont-section .logo-ayudar {
-  padding-top: 10%;
-}
-.section3-1-ayudar .cont-section .sec3-img-ayudar {
-  padding-top: 4%;
-}
-.section3-1-ayudar .cont-section .section-h1-3 {
-  color: #2D0404;
+.contactus .headings h2 {
   font-size: 40px;
-  padding-top: 8%;
+  color: #F45366;
+  padding-bottom: 1%;
 }
-
-.section3-2-ayudar {
-  background-color: #8753F4;
-  color: #FFFFFF;
-  height: 100vh;
-}
-.section3-2-ayudar h2 {
-  font-size: 40px;
-  color: #FFFFFF;
-  padding-left: 10%;
-  padding-top: 20%;
-  padding-bottom: 4%;
-}
-.section3-2-ayudar .form-content {
-  width: 85%;
-  padding-left: 10%;
-}
-.section3-2-ayudar .form-content .form-label {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #FFFFFF;
-  letter-spacing: 1px;
-}
-.section3-2-ayudar .form-content .form-control {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+.contactus .headings .p-form-ayudar {
   color: #717171;
+  font-size: 20px;
+  width: 60%;
+  margin: auto;
   letter-spacing: 1px;
+  padding-bottom: 2%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.contactus form {
+  padding-top: 2%;
+  padding-bottom: 5%;
+}
+.contactus form .input-form {
+  border: 1px solid #2D0404 !important;
+  border-radius: 0.25rem;
+}
+.contactus form textarea, .contactus form input {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #dbdbdb;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+.contactus form .btn-form {
+  background-image: linear-gradient(to right, #2182f1, #F45366, #e2c12f);
+  color: #FFFFFF;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 14px;
+  padding: 1.5% 4%;
+  border-color: #FFFFFF;
 }
 
+/* On screens that are 768px wide or less, go from four columns to two columns */
+@media (max-width: 768px) {
+  .banner-full {
+    background-color: #F45366;
+    color: #FFFFFF;
+  }
+
+  .boton-body {
+    border-color: #FFFFFF !important;
+    color: white !important;
+  }
+
+  .pasos-h2 {
+    padding-top: 15% !important;
+  }
+
+  .item-content p {
+    font-size: 14px !important;
+  }
+
+  .headings h2 {
+    font-size: 30px !important;
+    color: #F45366;
+    padding-bottom: 2%;
+    padding-top: 3%;
+  }
+
+  .headings .p-form-ayudar {
+    font-size: 14px !important;
+    width: 80% !important;
+  }
+}
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media (max-width: 992px) {
+  .banner-h1 {
+    font-size: 35px !important;
+  }
+
+  .banner2-ayudar {
+    background: url(../imagenes/flag.svg) no-repeat center;
+    background-size: cover;
+  }
+
+  .cont-section .section-h2 {
+    font-size: 35px !important;
+  }
+
+  .pasos2-ayudar {
+    height: 100%;
+    background: url(../imagenes/flag.svg) no-repeat center;
+    background-size: cover;
+  }
+
+  .pasos-h2 {
+    font-size: 35px !important;
+  }
+
+  .p-form-ayudar {
+    font-size: 18px !important;
+    width: 90% !important;
+    padding-bottom: 5% !important;
+  }
+}
 /*Fonts*/
 /*Fonts*/
 /*Colors*/
-.navigation {
-  margin: 0;
-}
-
+/*Breakpoints*/
 header {
   position: fixed;
   top: 0;
@@ -204,11 +276,10 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 5;
-  background: white;
+  background: #FFFFFF;
   color: rgba(71, 71, 71, 0.089);
   box-shadow: 0 0 14px 14px;
 }
-
 header .logo {
   position: relative;
   display: inline-block;
@@ -216,7 +287,6 @@ header .logo {
   animation-delay: 0.2s;
   opacity: 0;
 }
-
 @keyframes slide_left {
   0% {
     transform: translateX(-32px);
@@ -231,11 +301,9 @@ header ul {
   position: relative;
   display: flex;
 }
-
 header ul li {
   list-style: none;
 }
-
 header ul li a {
   display: inline-block;
   color: #2D0404;
@@ -250,7 +318,6 @@ header ul li a {
   animation-delay: calc(0.1s * var(--i));
   opacity: 0;
 }
-
 @keyframes slide_top {
   0% {
     transform: translateY(10px);
@@ -261,44 +328,26 @@ header ul li a {
     opacity: 1;
   }
 }
-header ul li a.active,
 header ul li a:hover {
   color: #F45366;
+}
+header .navigation {
+  margin: 0;
 }
 
 @media (max-width: 950px) {
   header {
     padding: 25px;
   }
-
-  .navigation {
-    display: none;
-  }
-
-  .navigation.active {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
   header ul li {
     margin: 10px 0;
   }
-
   header ul li a {
     margin-left: 0;
     font-size: 22px;
     padding-top: 20px;
   }
-
-  .toggle {
+  header .toggle {
     position: fixed;
     top: 20px;
     right: 20px;
@@ -313,17 +362,32 @@ header ul li a:hover {
     cursor: pointer;
     z-index: 6;
   }
-
-  .toggle.active {
+  header .toggle.active {
     background: #FFFFFF url(../imagenes/menu-close.svg);
     background-size: 22px;
     background-position: center;
     background-repeat: no-repeat;
   }
+  header .navigation {
+    display: none;
+  }
+  header .navigation.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 /*Fonts*/
 /*Fonts*/
 /*Colors*/
+/*Breakpoints*/
 footer {
   padding: 30px 20px;
   color: #FFFFFF;

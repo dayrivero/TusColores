@@ -1,8 +1,5 @@
 @import '../base/mixin';
 
-.navigation {
-    margin: 0;
-}
 header {
     position: fixed;
     top: 0;
@@ -13,108 +10,120 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 5;
-    background: rgb(255, 255, 255);
+    background: $white;
     color: rgba(71, 71, 71, 0.089);
     box-shadow: 0 0 14px 14px;
+
+        .logo {
+            position: relative;
+            display: inline-block;
+            animation: slide_left 0.5s linear forwards;
+            animation-delay: 0.2s;
+            opacity: 0;
+        }
+        @keyframes slide_left {
+            0% {
+                transform: translateX(-32px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        ul {
+            position: relative;
+            display: flex;
+
+            li {
+                list-style: none;
+
+                a {
+                    display: inline-block;
+                    color: $brown;
+                    font-family: -apple-system, BlinkMacSystemFont, ‘Segoe UI’, Roboto, Oxygen, Ubuntu, Cantarell, ‘Open Sans’, ‘Helvetica Neue’, sans-serif;
+                    font-weight: normal;
+                    letter-spacing: 2px;
+                    font-size: $btn-t;
+                    text-decoration: none;
+                    margin-left: 10px;
+                    padding: 0px 18px;
+                    animation: slide_top 0.2s linear forwards;
+                    animation-delay: calc(0.1s * var(--i));
+                    opacity: 0;
+                }
+                @keyframes slide_top {
+                    0% {
+                        transform: translateY(10px);
+                        opacity: 0;
+                    }
+                    100% {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+                a:hover {
+                    color: $pink;
+                }
+            }
+        }
+
+        .navigation {
+        margin: 0;
+        }
 }
-header .logo {
-    position: relative;
-    display: inline-block;
-    animation: slide_left 0.5s linear forwards;
-    animation-delay: 0.2s;
-    opacity: 0;
-}
-@keyframes slide_left {
-    0% {
-        transform: translateX(-32px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-header ul {
-    position: relative;
-    display: flex;
-}
-header ul li {
-    list-style: none;
-}
-header ul li a {
-    display: inline-block;
-    color: $brown;
-    font-family: -apple-system, BlinkMacSystemFont, ‘Segoe UI’, Roboto, Oxygen, Ubuntu, Cantarell, ‘Open Sans’, ‘Helvetica Neue’, sans-serif;
-    font-weight: normal;
-    letter-spacing: 2px;
-    font-size: $btn-t;
-    text-decoration: none;
-    margin-left: 10px;
-    padding: 0px 18px;
-    animation: slide_top 0.2s linear forwards;
-    animation-delay: calc(0.1s * var(--i));
-    opacity: 0;
-}
-@keyframes slide_top {
-    0% {
-        transform: translateY(10px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-header ul li a.active,
-header ul li a:hover {
-    color: $pink;
-}
+
 @media (max-width: 950px) {
     header {
         padding: 25px;
-    }
-    .navigation {
-        display: none;
-    }
-    .navigation.active {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    header ul li {
-        margin: 10px 0;
-    }
-    header ul li a {
-        margin-left: 0;
-        font-size: $h3-d;
-        padding-top: 20px;
-    }
-    .toggle {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        width: 40px;
-        height: 40px;
-        background: #FFFFFF url(../imagenes/menu.svg);
-        border-radius: 5px;
-        border: solid $brown 2px;
-        background-size: 22px;
-        background-repeat: no-repeat;
-        background-position: center;
-        cursor: pointer;
-        z-index: 6;
-    }
-    .toggle.active {
-        background: #FFFFFF url(../imagenes/menu-close.svg);
-        background-size: 22px;
-        background-position: center;
-        background-repeat: no-repeat;
+
+        ul li {
+            margin: 10px 0;
+
+            a {
+                margin-left: 0;
+                font-size: $h3-d;
+                padding-top: 20px;
+            }
+        }
+
+        .toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background: #FFFFFF url(../imagenes/menu.svg);
+            border-radius: 5px;
+            border: solid $brown 2px;
+            background-size: 22px;
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+            z-index: 6;
+        }
+        .toggle.active {
+            background: #FFFFFF url(../imagenes/menu-close.svg);
+            background-size: 22px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .navigation {
+            display: none;
+        }
+        .navigation.active {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
     }
 }

@@ -1,10 +1,14 @@
 @import '../base/mixin';
 @import '../base/maps';
 @import '../base/condicion';
+@import '../base/variables';
+
 
 .banner-full {
-    @include condicion($yellow);
-
+    @include condicion($light-yellow);
+    .row-ayudar {
+      margin: 0;
+    }
     .banner1-ayudar {
         padding: 0px 0px;
     
@@ -13,7 +17,7 @@
             padding-right: 8% !important;
     
             .banner-h1 {
-                @include h1-nobg;
+                font-size: $h1-d;
                 padding-bottom: 10%;
                 padding-top: 10%;
             }
@@ -36,104 +40,152 @@
     background-size: cover;
 }
 
-.section2-1-ayudar {
-    padding: 0px 0px;
+/*---------------*/
 
-    .cont-section {
-        padding-left: 18% !important;
-        padding-right: 8% !important;
-
-        .section-h1 {
-            @include h1-nobg;
-            padding-bottom: 8%;
-            padding-top: 3%;
-        }
-
-        .item-content {
-            padding-right: 10%;
-
-            h1 {
-                font-size: 30px;
-            }
-            .item-1-a {
-                color: map-get($items-nro, rosafeo);
-            }
-            .item-2-a {
-                color: map-get($items-nro, verdemal);
-            }
-            .item-3-a {
-                color: map-get($items-nro, morado);
-            }
-            .item-4-a {
-                color: map-get($items-nro, azulito);
-            }
-
-            p {
-                color: $gray;
-                font-size: $p-d;
-                letter-spacing: $spc-p;
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            }
-        }
-    }
-}
-
-.section2-2-ayudar {
-    height: 100%;
-    background: url(../imagenes/ayudar-2.svg) no-repeat center;
-    background-size: cover;
-}
-
-.section3-1-ayudar {
-    padding: 0px 0px;
-    background-color: $bg-gray;
-    height: 100vh;
-
-    .cont-section {
-        padding-left: 18% !important;
-        padding-right: 8% !important;
-        
-        .logo-ayudar {
-            padding-top: 10%;
-        }
-        .sec3-img-ayudar {
-            padding-top: 4%;
-        }
-        .section-h1-3 {
-            @include h1-nobg;
-            padding-top: 8%;
+.pasos-ayudar {
+  background: $white;
+  .row-pasos-ayudar {
+    margin: 0;
+  }
+  .pasos1-ayudar {
+      padding: 0px 0px;
+  
+      .cont-pasos-ayudar {
+          padding-left: 18% !important;
+          padding-right: 8% !important;
+  
+          .pasos-h2 {
+              font-size: $h1-d;
+              padding-bottom: 5%;
+              padding-top: 0;
+              color: $brown;
+          }
+          .item-1-a {
+            color: map-get($items-nro, rosafeo);
+            padding-bottom: 10px;
+          }
+          .item-2-a {
+              color: map-get($items-nro, verdemal);
+              padding-bottom: 10px;
+          }
+          .item-3-a {
+              color: map-get($items-nro, morado);
+              padding-bottom: 10px;
+          }
+          .item-4-a {
+              color: map-get($items-nro, azulito);
+              padding-bottom: 10px;
+          }
+          .item-content p {
+            color: $gray;
+            width: 90%;
+            font-size: $p-d;
+            letter-spacing: $spc-p;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          }
         }
     }
 }
 
-.section3-2-ayudar {
-    @include condicion($purple);
-    height: 100vh;
+.pasos2-ayudar {
+  height: 100%;
+  background: url(../imagenes/ayudar-2.svg) no-repeat center;
+  background-size: cover;
+}
+
+.contactus {
+  background: $bg-gray;
+  padding: 6% 0 8% 0;
+
+  .headings {
 
     h2 {
-        font-size: 40px;
-        color: $white;
-        padding-left: 10%;
-        padding-top: 20%;
-        padding-bottom: 4%;
+      font-size: $h2-d;
+      color: $pink;
+      padding-bottom: 1%;
     }
-
-    .form-content{
-        width: 85%;
-        padding-left: 10%;
-
-        .form-label {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            color: $white;
-            letter-spacing: $spc-p;
-        }
-
-        .form-control {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            color: $gray;
-            letter-spacing: $spc-p;
-        }
+    .p-form-ayudar {
+      color: $gray;
+      font-size: 20px;
+      width: 60%;
+      margin: auto;
+      letter-spacing: $spc-p;
+      padding-bottom: 2%;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
+  }
 
+  form {
+      padding-top: 2%;
+      padding-bottom: 5%;
+      .input-form {
+        border: 1px solid $brown !important;
+        border-radius: .25rem;
+      }
+      textarea, input {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: rgb(219, 219, 219);
+        letter-spacing: 1px;
+        font-size: 14px;
+      }
+      .btn-form {   
+        @include boton-form;
+      }
+  }
 }
 
+
+/* On screens that are 768px wide or less, go from four columns to two columns */
+@media (max-width: 768px) {
+  .banner-full {
+    @include condicion($pink);
+  }
+  .boton-body {
+    border-color: $white !important;
+    color: white !important;
+  }
+  .pasos-h2 {
+    padding-top: 15% !important;
+  }
+  .item-content p {
+    font-size: 14px !important;
+  }
+  .headings h2 {
+      font-size: 30px !important;
+      color: $pink;
+      padding-bottom: 2%;
+      padding-top: 3%;
+  }
+  .headings .p-form-ayudar {
+    font-size: 14px !important;
+    width: 80% !important;
+  }
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media (max-width: 992px) {
+
+  .banner-h1 {
+    font-size: 35px !important;
+  }
+  .banner2-ayudar {
+    background: url(../imagenes/flag.svg) no-repeat center;
+    background-size: cover;
+  }
+  .cont-section .section-h2 {
+    font-size: 35px !important;
+  }
+  .pasos2-ayudar {
+    height: 100%;
+    background: url(../imagenes/flag.svg) no-repeat center;
+    background-size: cover;
+  }
+  .pasos-h2 {
+    font-size: 35px !important;
+  }
+  .p-form-ayudar {
+    font-size: 18px !important;
+    width: 90% !important;
+    padding-bottom: 5% !important;
+  }
+}

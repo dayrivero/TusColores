@@ -3,7 +3,7 @@
 @mixin condicion($colorif) {
   background-color: $colorif;
   
-  @if $colorif == $yellow {
+  @if $colorif == $light-yellow {
     color: $brown;
   }
   @else {
