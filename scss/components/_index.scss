@@ -1,80 +1,155 @@
-/*INICIO HOME*/
-.cols {
-    padding: 0px 0px;
-  }
-  
-  .cols2 {
-    height: 100%;
-    background: url(../imagenes/banner.svg) no-repeat center;
-    background-size: cover;
-  }
-  
-  .cols3 {
-    height: 100%;
-    background: url(../imagenes/gif-iniciativa.gif) no-repeat center;
-    background-size: cover;
-  }
-  
-  .cols4 {
-    height: 100%;
-    background: url(../imagenes/banner.svg) no-repeat center;
-    background-size: cover;
-  }
+@import '../base/mixin';
+@import '../base/maps';
+@import '../base/condicion';
+@import '../base/variables';
 
-  .colserror2 {
-    height: 100%;
-    background: url(../imagenes/404img.svg) no-repeat center;
-    background-size: cover;
-  }
+/*-- Error 404 page style --*/
+.banner-error {
+  background: $white;
 
-  
-  .cont-bannerh {
+  .cont-error {
     padding-left: 18% !important;
     padding-right: 8% !important;
+
+    .errorh1 {
+      color: $brown;
+      font-size: $h1-d;
+      padding-bottom: 10%;
+      padding-top: 10%;
+    }
+    .btn-error {
+      @include boton;
+      &:hover {
+          background-image: linear-gradient(to right, $blue, $pink, $yellow);
+          color: $white;
+          border-color: $white;
+      }
+    }
   }
+}
+.colserror2 {
+  height: 100%;
+  background: url(../imagenes/404img.svg) no-repeat center;
+  background-size: cover;
+}
+/*-- Error 404 page style --*/
+
+/*-- Inicio page style --*/
+.cols-home {
+    padding: 0px 0px;
+
+    .cont-bannerh {
+      padding-left: 18% !important;
+      padding-right: 8% !important;
+
+      .banner-homeh1 {
+        color: $brown;
+        font-size: $h1-d;
+        padding-bottom: 10%;
+        padding-top: 10%;
+      }
+    }
+}
   
-  .cont-sectionh {
-    padding-left: 18% !important;
-    padding-right: 16% !important;
+.cols-home2 {
+  height: 100%;
+  background: url(../imagenes/banner.svg) no-repeat center;
+  background-size: cover;      
+}
+
+.cont-sectionh {
+  padding-left: 18% !important;
+  padding-right: 16% !important;
+
+    .section-homeh2 {
+      color: $pink;
+      font-size: $h1-d;
+      padding-bottom: 5%;
+      padding-top: 10%;
+    }
+
+    .section-home-p {
+      color: $gray;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+      letter-spacing: 1px;
+      padding-bottom: 6%;
+    }
+}
+
+.cols-home3 {
+  height: 100%;
+  background: url(../imagenes/gif-iniciativa.gif) no-repeat center;
+  background-size: cover;
+}
+
+.cols-home4 {
+  height: 100%;
+  background: url(../imagenes/banner.svg) no-repeat center;
+  background-size: cover;
+}
+
+.btn-home1 {
+  @include boton;
+  &:hover {
+      background-image: linear-gradient(to right, $blue, $pink, $yellow);
+      color: $white;
+      border-color: $white;
   }
-  
-  .cont-bannerh h1 {
-    color: #2D0404 !important;
-    font-size: 40px !important;
-    padding-bottom: 10%;
-    padding-top: 10%;
+}
+.my-custom-row {
+  margin: 0;
+}
+
+/* On screens that are 768px wide or less, go from four columns to two columns */
+@media (max-width: 768px) {
+  .banner-homeh1 {
+    color: $white !important;
+    font-size: 30px !important;
   }
-  
-  .cont-sectionh h1 {
-    color: #F45366 !important;
-    font-size: 42px !important;
-    padding-bottom: 5%;
-    padding-top: 10%;
+  .section-homeh2 {
+    color: $white !important;
+    font-size: 30px !important;
   }
-  
-  .cont-sectionh p {
-    color: rgb(100, 100, 100);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 1px;
-    padding-bottom: 6%;
+  .section-home-p {
+    color: $white !important;
+    font-size: 14px !important;
   }
-  
   .btn-home1 {
-    color: #2D0404;
-    border-color: #2D0404;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 500;
-    letter-spacing: 2px;
-    font-size: 14px;
-    padding: 2% 4%;
+    @include botonwhite;
+    &:hover {
+        background-image: linear-gradient(to right, $blue, $pink, $yellow);
+        color: $white;
+        border-color: $white;
+    }
   }
-  
-  .btn-home1:hover {
-    background-image: linear-gradient(to right, #2182f1, #F45366, #e2c12f);
-    color: white;
-    border-color: white;
+  .banner-home {
+    background: $pink;
   }
-  /*FIN HOME*/
+  .home1-section {
+    background: $blue; 
+  }
+  .home2-section {
+    background: $purple;
+  }
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media (max-width: 992px) {
+
+  .cols-home2 {
+    background: url(../imagenes/flag.svg) no-repeat center;
+    background-size: cover;      
+  }
+  .cols-home3 {
+    background: url(../imagenes/flag.svg) no-repeat center;
+    background-size: cover;
+  }
+  .cols-home4 {
+    background: url(../imagenes/flag.svg) no-repeat center;
+    background-size: cover;
+  }
+
+}
