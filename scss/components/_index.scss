@@ -3,38 +3,7 @@
 @import '../base/condicion';
 @import '../base/variables';
 
-/*-- Error 404 page style --*/
-.banner-error {
-  background: $white;
-
-  .cont-error {
-    padding-left: 18% !important;
-    padding-right: 8% !important;
-
-    .errorh1 {
-      color: $brown;
-      font-size: $h1-d;
-      padding-bottom: 10%;
-      padding-top: 10%;
-    }
-    .btn-error {
-      @include boton;
-      &:hover {
-          background-image: linear-gradient(to right, $blue, $pink, $yellow);
-          color: $white;
-          border-color: $white;
-      }
-    }
-  }
-}
-.colserror2 {
-  height: 100%;
-  background: url(../imagenes/404img.svg) no-repeat center;
-  background-size: cover;
-}
-/*-- Error 404 page style --*/
-
-/*-- Inicio page style --*/
+/*-- Banner Estilo --*/
 .cols-home {
     padding: 0px 0px;
 
@@ -50,7 +19,8 @@
       }
     }
 }
-  
+
+/*-- Estilo de secciones de iniciativa --*/
 .cols-home2 {
   height: 100%;
   background: url(../imagenes/banner.svg) no-repeat center;
@@ -103,7 +73,7 @@
   margin: 0;
 }
 
-/* On screens that are 768px wide or less, go from four columns to two columns */
+/* Media queries de tamaño tablet o menos*/
 @media (max-width: 768px) {
   .banner-homeh1 {
     color: $white !important;
@@ -136,7 +106,7 @@
   }
 }
 
-/* On screens that are 992px wide or less, go from four columns to two columns */
+/* Media queries tamaño tablet o compus pequeñas */
 @media (max-width: 992px) {
 
   .cols-home2 {
@@ -153,3 +123,34 @@
   }
 
 }
+
+/*-- Error 404 page style --*/
+.banner-error {
+  background: $white;
+
+  .cont-error {
+    padding-left: 18% !important;
+    padding-right: 8% !important;
+
+    .errorh1 {
+      color: $brown;
+      font-size: $h1-d;
+      padding-bottom: 10%;
+      padding-top: 10%;
+    }
+    .btn-error {
+      @include boton;
+      &:hover {
+          background-image: linear-gradient(to right, $blue, $pink, $yellow);
+          color: $white;
+          border-color: $white;
+      }
+    }
+  }
+}
+.colserror2 {
+  height: 100%;
+  background: url(../imagenes/404img.svg) no-repeat center;
+  background-size: cover;
+}
+/*-- Error 404 page style --*/

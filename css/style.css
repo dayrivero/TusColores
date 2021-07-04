@@ -2,66 +2,35 @@
 /*Fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-/*Fonts*/
+/*Fonts sizes*/
 /*Colors*/
 /*Breakpoints*/
+/*Me sirve para los diferentes usos de los botones a lo largo del sitio*/
+/*Variaciones de banners y sliders*/
+/*Para fondos de colores, contraste*/
+/*Para el formulario, customizado*/
 /*Fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-/*Fonts*/
+/*Fonts sizes*/
 /*Colors*/
 /*Breakpoints*/
+/*Aplicable para listas que usarán mismos elementos con diferentes colores*/
 /*Fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-/*Fonts*/
+/*Fonts sizes*/
 /*Colors*/
 /*Breakpoints*/
-/*$screen-xs-min: 576px;
-$screen-sm-min: 576px;
-$screen-md-min: 768px;
-$screen-lg-min: 1200px;
-$screen-xl-min: 1200px;
-$screen-xxl-min: 1400px;
-
-@mixin breakpoint($size) {
-  @if $size == small {
-    @media only screen and (min-width: $screen-xs-min) {
-        @content;
-    }
-  }
-  @else if $size == med-small {
-    @media only screen and (min-width: $screen-sm-min) {
-        @content;
-    }
-  }
-  @else if $size == med {
-    @media only screen and (min-width: $screen-md-min) {
-        @content;
-    }
-  }
- @else if $size == large {
-    @media only screen and (min-width: $screen-lg-min) {
-        @content;
-    }
-  }
-  @else if $size == x-large {
-    @media only screen and (min-width: $screen-xl-min) {
-        @content;
-    }
-  }
-  @else if $size == xx-large {
-    @media only screen and (min-width: $screen-xxl-min) {
-        @content;
-    }
-  }
-}*/
+/*Aplicable para algunos backgrounds y h1 de banners*/
 /*Fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-/*Fonts*/
+/*Fonts sizes*/
 /*Colors*/
 /*Breakpoints*/
+/*Banner Principal*/
+/*Lado izquierdo de banner*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
@@ -116,12 +85,15 @@ $screen-xxl-min: 1400px;
   border-color: #FFFFFF;
 }
 
+/*Lado derecho de banner*/
 .banner2-ayudar {
   height: 100%;
   background: url(../imagenes/nocolor.svg) no-repeat center;
   background-size: cover;
 }
 
+/*Sección informativa cómo ayudar*/
+/*Lado izquierdo*/
 .pasos-ayudar {
   background: #FFFFFF;
 }
@@ -165,15 +137,19 @@ $screen-xxl-min: 1400px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+/*Lado derecho*/
 .pasos2-ayudar {
   height: 100%;
   background: url(../imagenes/ayudar-2.svg) no-repeat center;
   background-size: cover;
 }
 
+/*Sección de contacto con Form*/
+/*Texto*/
 .contactus {
   background: #F6F6F6;
   padding: 6% 0 8% 0;
+  /*Formulario de contacto*/
 }
 .contactus .headings h2 {
   font-size: 40px;
@@ -214,7 +190,7 @@ $screen-xxl-min: 1400px;
   border-color: #FFFFFF;
 }
 
-/* On screens that are 768px wide or less, go from four columns to two columns */
+/* Media queries de tamaño tablet o menos*/
 @media (max-width: 768px) {
   .banner-full {
     background-color: #F45366;
@@ -246,7 +222,7 @@ $screen-xxl-min: 1400px;
     width: 80% !important;
   }
 }
-/* On screens that are 992px wide or less, go from four columns to two columns */
+/* Tamaño tablet o compus pequeñas */
 @media (max-width: 992px) {
   .banner-h1 {
     font-size: 35px !important;
@@ -278,9 +254,14 @@ $screen-xxl-min: 1400px;
   }
 }
 /*Fonts*/
-/*Fonts*/
+/*Fonts sizes*/
 /*Colors*/
 /*Breakpoints*/
+/*Me sirve para los diferentes usos de los botones a lo largo del sitio*/
+/*Variaciones de banners y sliders*/
+/*Para fondos de colores, contraste*/
+/*Para el formulario, customizado*/
+/* Navbar Completo*/
 header {
   position: fixed;
   top: 0;
@@ -350,6 +331,7 @@ header .navigation {
   margin: 0;
 }
 
+/* Media queries de tamaño tablet o menos*/
 @media (max-width: 950px) {
   header {
     padding: 25px;
@@ -400,7 +382,7 @@ header .navigation {
   }
 }
 /*Fonts*/
-/*Fonts*/
+/*Fonts sizes*/
 /*Colors*/
 /*Breakpoints*/
 footer {
@@ -409,36 +391,21 @@ footer {
   background-color: #2B2828;
   width: 100%;
 }
-
-.footer-list {
+footer .footer-list {
   display: flex;
   align-items: center;
   padding-top: 2%;
 }
-
-.simple-footer ul {
+footer ul {
   list-style: none;
   margin-bottom: 25px;
   justify-content: center;
 }
-
-.simple-footer li {
+footer ul li {
   padding: 0 15px;
   margin-bottom: 0;
 }
-
-.footer-list a {
-  text-decoration: none;
-  font-weight: lighter;
-  font-size: 20px;
-  letter-spacing: 2px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  color: white;
-}
-
-.simple-footer p {
+footer .simple-footer p {
   text-align: center;
   font-weight: lighter;
   letter-spacing: 2px;
@@ -446,6 +413,7 @@ footer {
   padding-bottom: 20px;
 }
 
+/*Tamaños para cuando el dispositivo es más chico que una tablet*/
 @media (max-width: 650px) {
   .sm-iconw {
     width: 24px;
@@ -471,97 +439,28 @@ footer {
   }
 }
 /*Fonts*/
-/*Fonts*/
+/*Fonts sizes*/
 /*Colors*/
 /*Breakpoints*/
+/*Me sirve para los diferentes usos de los botones a lo largo del sitio*/
+/*Variaciones de banners y sliders*/
+/*Para fondos de colores, contraste*/
+/*Para el formulario, customizado*/
 /*Fonts*/
-/*Fonts*/
+/*Fonts sizes*/
 /*Colors*/
 /*Breakpoints*/
+/*Aplicable para listas que usarán mismos elementos con diferentes colores*/
 /*Fonts*/
-/*Fonts*/
+/*Fonts sizes*/
 /*Colors*/
 /*Breakpoints*/
-/*$screen-xs-min: 576px;
-$screen-sm-min: 576px;
-$screen-md-min: 768px;
-$screen-lg-min: 1200px;
-$screen-xl-min: 1200px;
-$screen-xxl-min: 1400px;
-
-@mixin breakpoint($size) {
-  @if $size == small {
-    @media only screen and (min-width: $screen-xs-min) {
-        @content;
-    }
-  }
-  @else if $size == med-small {
-    @media only screen and (min-width: $screen-sm-min) {
-        @content;
-    }
-  }
-  @else if $size == med {
-    @media only screen and (min-width: $screen-md-min) {
-        @content;
-    }
-  }
- @else if $size == large {
-    @media only screen and (min-width: $screen-lg-min) {
-        @content;
-    }
-  }
-  @else if $size == x-large {
-    @media only screen and (min-width: $screen-xl-min) {
-        @content;
-    }
-  }
-  @else if $size == xx-large {
-    @media only screen and (min-width: $screen-xxl-min) {
-        @content;
-    }
-  }
-}*/
+/*Aplicable para algunos backgrounds y h1 de banners*/
 /*Fonts*/
-/*Fonts*/
+/*Fonts sizes*/
 /*Colors*/
 /*Breakpoints*/
-/*-- Error 404 page style --*/
-.banner-error {
-  background: #FFFFFF;
-}
-.banner-error .cont-error {
-  padding-left: 18% !important;
-  padding-right: 8% !important;
-}
-.banner-error .cont-error .errorh1 {
-  color: #2D0404;
-  font-size: 40px;
-  padding-bottom: 10%;
-  padding-top: 10%;
-}
-.banner-error .cont-error .btn-error {
-  color: #2D0404;
-  border-color: #2D0404;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 700;
-  letter-spacing: 2px;
-  font-size: 14px;
-  padding: 2% 4%;
-}
-.banner-error .cont-error .btn-error:hover {
-  background-image: linear-gradient(to right, #2182f1, #F45366, #e2c12f);
-  color: #FFFFFF;
-  border-color: #FFFFFF;
-}
-
-.colserror2 {
-  height: 100%;
-  background: url(../imagenes/404img.svg) no-repeat center;
-  background-size: cover;
-}
-
-/*-- Error 404 page style --*/
-/*-- Inicio page style --*/
+/*-- Banner Estilo --*/
 .cols-home {
   padding: 0px 0px;
 }
@@ -576,6 +475,7 @@ $screen-xxl-min: 1400px;
   padding-top: 10%;
 }
 
+/*-- Estilo de secciones de iniciativa --*/
 .cols-home2 {
   height: 100%;
   background: url(../imagenes/banner.svg) no-repeat center;
@@ -633,7 +533,7 @@ $screen-xxl-min: 1400px;
   margin: 0;
 }
 
-/* On screens that are 768px wide or less, go from four columns to two columns */
+/* Media queries de tamaño tablet o menos*/
 @media (max-width: 768px) {
   .banner-homeh1 {
     color: #FFFFFF !important;
@@ -677,7 +577,7 @@ $screen-xxl-min: 1400px;
     background: #8753F4;
   }
 }
-/* On screens that are 992px wide or less, go from four columns to two columns */
+/* Media queries tamaño tablet o compus pequeñas */
 @media (max-width: 992px) {
   .cols-home2 {
     background: url(../imagenes/flag.svg) no-repeat center;
@@ -694,61 +594,65 @@ $screen-xxl-min: 1400px;
     background-size: cover;
   }
 }
-/*Fonts*/
-/*Fonts*/
-/*Colors*/
-/*Breakpoints*/
-/*Fonts*/
-/*Fonts*/
-/*Colors*/
-/*Breakpoints*/
-/*Fonts*/
-/*Fonts*/
-/*Colors*/
-/*Breakpoints*/
-/*$screen-xs-min: 576px;
-$screen-sm-min: 576px;
-$screen-md-min: 768px;
-$screen-lg-min: 1200px;
-$screen-xl-min: 1200px;
-$screen-xxl-min: 1400px;
+/*-- Error 404 page style --*/
+.banner-error {
+  background: #FFFFFF;
+}
+.banner-error .cont-error {
+  padding-left: 18% !important;
+  padding-right: 8% !important;
+}
+.banner-error .cont-error .errorh1 {
+  color: #2D0404;
+  font-size: 40px;
+  padding-bottom: 10%;
+  padding-top: 10%;
+}
+.banner-error .cont-error .btn-error {
+  color: #2D0404;
+  border-color: #2D0404;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 14px;
+  padding: 2% 4%;
+}
+.banner-error .cont-error .btn-error:hover {
+  background-image: linear-gradient(to right, #2182f1, #F45366, #e2c12f);
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
 
-@mixin breakpoint($size) {
-  @if $size == small {
-    @media only screen and (min-width: $screen-xs-min) {
-        @content;
-    }
-  }
-  @else if $size == med-small {
-    @media only screen and (min-width: $screen-sm-min) {
-        @content;
-    }
-  }
-  @else if $size == med {
-    @media only screen and (min-width: $screen-md-min) {
-        @content;
-    }
-  }
- @else if $size == large {
-    @media only screen and (min-width: $screen-lg-min) {
-        @content;
-    }
-  }
-  @else if $size == x-large {
-    @media only screen and (min-width: $screen-xl-min) {
-        @content;
-    }
-  }
-  @else if $size == xx-large {
-    @media only screen and (min-width: $screen-xxl-min) {
-        @content;
-    }
-  }
-}*/
+.colserror2 {
+  height: 100%;
+  background: url(../imagenes/404img.svg) no-repeat center;
+  background-size: cover;
+}
+
+/*-- Error 404 page style --*/
 /*Fonts*/
-/*Fonts*/
+/*Fonts sizes*/
 /*Colors*/
 /*Breakpoints*/
+/*Me sirve para los diferentes usos de los botones a lo largo del sitio*/
+/*Variaciones de banners y sliders*/
+/*Para fondos de colores, contraste*/
+/*Para el formulario, customizado*/
+/*Fonts*/
+/*Fonts sizes*/
+/*Colors*/
+/*Breakpoints*/
+/*Aplicable para listas que usarán mismos elementos con diferentes colores*/
+/*Fonts*/
+/*Fonts sizes*/
+/*Colors*/
+/*Breakpoints*/
+/*Aplicable para algunos backgrounds y h1 de banners*/
+/*Fonts*/
+/*Fonts sizes*/
+/*Colors*/
+/*Breakpoints*/
+/* Banner principal personas, elementos centrados*/
 .banner-fullp {
   background: url(../imagenes/nocolor-big.svg) no-repeat center;
   background-size: cover;
@@ -786,6 +690,7 @@ $screen-xxl-min: 1400px;
   border-color: #FFFFFF;
 }
 
+/* Secciones de personas organizadas con las mismas variables*/
 .section1-full-per .row-per,
 .section2-full-per .row-per {
   margin: 0;
@@ -850,6 +755,7 @@ $screen-xxl-min: 1400px;
   border-color: #FFFFFF;
 }
 
+/* Imágenes respectivas de cada persona*/
 .section2-per {
   height: 100%;
   background: url(../imagenes/persona-1photo.png) no-repeat center;
@@ -868,6 +774,7 @@ $screen-xxl-min: 1400px;
   background-size: 70%;
 }
 
+/* Media queries tamaño tablet o compus pequeñas */
 @media (max-width: 992px) {
   .cont-section-per {
     padding-right: 35%;
@@ -896,6 +803,7 @@ $screen-xxl-min: 1400px;
     background-color: #F6F6F6;
   }
 }
+/* Media queries de tamaño tablet o menos*/
 @media (max-width: 768px) {
   .section2-per {
     background: url(../imagenes/persona-1photo2.png) no-repeat center;

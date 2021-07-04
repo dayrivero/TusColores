@@ -1,5 +1,8 @@
 @import '../base/variables';
 
+/*Me sirve para los diferentes usos de los botones a lo largo del sitio*/
+
+/*Variaciones de banners y sliders*/
 @mixin boton {
   color: $brown;
   border-color: $brown;
@@ -30,6 +33,7 @@
   padding: 2% 8% 2% 0;
 }
 
+/*Para fondos de colores, contraste*/
 @mixin botonwhite {
   color: $white;
   border-color: $white;
@@ -40,6 +44,7 @@
   padding: 2% 4%;
 }
 
+/*Para el formulario, customizado*/
 @mixin boton-form {
   background-image: linear-gradient(to right, $blue, $pink, $yellow);
   color: $white;

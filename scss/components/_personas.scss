@@ -3,7 +3,7 @@
 @import '../base/condicion';
 @import '../base/variables';
 
-
+/* Banner principal personas, elementos centrados*/
 .banner-fullp {
     background: url(../imagenes/nocolor-big.svg) no-repeat center;
     background-size: cover;
@@ -39,7 +39,7 @@
     }
   }
 
-
+/* Secciones de personas organizadas con las mismas variables*/
 .section1-full-per,
 .section2-full-per {
     .row-per {
@@ -90,7 +90,7 @@
         }
     }
 }
-
+/* Imágenes respectivas de cada persona*/
 .section2-per {
     height: 100%;
     background: url(../imagenes/persona-1photo.png) no-repeat center;
@@ -109,6 +109,7 @@
   background-size: 70%;
 }
 
+/* Media queries tamaño tablet o compus pequeñas */
   @media (max-width: 992px) {
 
     .cont-section-per {
@@ -133,6 +134,8 @@
       background-color: $bg-gray;
     }
   }
+
+  /* Media queries de tamaño tablet o menos*/
   @media (max-width: 768px) {
     .section2-per {
       background: url(../imagenes/persona-1photo2.png) no-repeat center;

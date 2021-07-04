@@ -1,5 +1,6 @@
 @import '../base/mixin';
 
+/* Navbar Completo*/
 header {
     position: fixed;
     top: 0;
@@ -74,6 +75,7 @@ header {
         }
 }
 
+/* Media queries de tamaño tablet o menos*/
 @media (max-width: 950px) {
     header {
         padding: 25px;
