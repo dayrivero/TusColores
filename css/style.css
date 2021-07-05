@@ -52,8 +52,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 .banner-full {
-  background-color: #ffeb91;
-  color: #2D0404;
+  background-color: #F6F6F6;
+  color: #FFFFFF;
 }
 .banner-full .row-ayudar {
   margin: 0;
@@ -62,13 +62,14 @@
   padding: 0px 0px;
 }
 .banner-full .banner1-ayudar .cont-banner {
-  padding-left: 18% !important;
+  padding-left: 16% !important;
   padding-right: 8% !important;
 }
 .banner-full .banner1-ayudar .cont-banner .banner-h1 {
   font-size: 40px;
   padding-bottom: 10%;
   padding-top: 10%;
+  color: #2D0404;
 }
 .banner-full .banner1-ayudar .cont-banner .boton-body {
   color: #2D0404;
@@ -104,7 +105,7 @@
   padding: 0px 0px;
 }
 .pasos-ayudar .pasos1-ayudar .cont-pasos-ayudar {
-  padding-left: 18% !important;
+  padding-left: 16% !important;
   padding-right: 8% !important;
 }
 .pasos-ayudar .pasos1-ayudar .cont-pasos-ayudar .pasos-h2 {
@@ -147,17 +148,17 @@
 /*Sección de contacto con Form*/
 /*Texto*/
 .contactus {
-  background: #F6F6F6;
-  padding: 6% 0 8% 0;
+  background: #8753F4;
+  padding: 6% 0 4% 0;
   /*Formulario de contacto*/
 }
 .contactus .headings h2 {
   font-size: 40px;
-  color: #F45366;
+  color: #FFFFFF;
   padding-bottom: 1%;
 }
 .contactus .headings .p-form-ayudar {
-  color: #717171;
+  color: #FFFFFF;
   font-size: 20px;
   width: 60%;
   margin: auto;
@@ -170,12 +171,11 @@
   padding-bottom: 5%;
 }
 .contactus form .input-form {
-  border: 1px solid #2D0404 !important;
+  border: 1px solid #FFFFFF !important;
   border-radius: 0.25rem;
 }
 .contactus form textarea, .contactus form input {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #dbdbdb;
   letter-spacing: 1px;
   font-size: 14px;
 }
@@ -192,6 +192,11 @@
 
 /* Media queries de tamaño tablet o menos*/
 @media (max-width: 768px) {
+  .banner-h1 {
+    font-size: 30px !important;
+    color: #FFFFFF !important;
+  }
+
   .banner-full {
     background-color: #F45366;
     color: #FFFFFF;
@@ -423,18 +428,22 @@ footer .simple-footer p {
     background-position: center;
   }
 
+  .footer-list {
+    padding-right: 12%;
+  }
+
   .logofooter {
-    width: 90%;
+    display: none;
   }
 
   .simple-footer p {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 14px;
-    width: 300px;
+    width: 100%;
     letter-spacing: 2px;
-    font-weight: 300;
+    font-weight: bold;
     padding-top: 10px;
-    margin: 1px 80px;
+    margin: 1px 0;
     line-height: 24px;
   }
 }
@@ -802,6 +811,11 @@ footer .simple-footer p {
     background-size: cover;
     background-color: #F6F6F6;
   }
+
+  .boton-sm {
+    font-size: 11px !important;
+    padding: 2% 4% 2% 0 !important;
+  }
 }
 /* Media queries de tamaño tablet o menos*/
 @media (max-width: 768px) {
@@ -856,6 +870,11 @@ footer .simple-footer p {
   .btn-banner-per .boton-per-banner {
     color: #FFFFFF !important;
     border-color: #FFFFFF !important;
+  }
+
+  .boton-sm {
+    font-size: 11px !important;
+    padding: 2% 4% 2% 0 !important;
   }
 }
 body {
