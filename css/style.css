@@ -60,7 +60,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 .banner-full {
-  background-color: #F6F6F6;
   color: #FFFFFF;
 }
 .banner-full .row-ayudar {
@@ -97,7 +96,7 @@
 /*Lado derecho de banner*/
 .banner2-ayudar {
   height: 100%;
-  background: url(../imagenes/nocolor.svg) no-repeat center;
+  background: url(../imagenes/ayudar_banner.png) no-repeat center;
   background-size: cover;
 }
 
@@ -149,55 +148,152 @@
 /*Lado derecho*/
 .pasos2-ayudar {
   height: 100%;
-  background: url(../imagenes/ayudar-2.svg) no-repeat center;
+  background: url(../imagenes/ayudar_section.png) no-repeat center;
   background-size: cover;
 }
 
-/*Sección de contacto con Form*/
-/*Texto*/
-.contactus {
-  background: #8753F4;
-  padding: 6% 0 4% 0;
-  /*Formulario de contacto*/
+/*Inicio Form Section*/
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  background-attachment: white;
 }
-.contactus .headings h2 {
+.contact-form .fullform {
+  width: 80%;
+  padding: 20px;
+}
+.contact-form .fullform h2 {
+  width: 100%;
+  color: #2D0404;
   font-size: 40px;
-  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Roboto Slab";
   padding-bottom: 1%;
 }
-.contactus .headings .p-form-ayudar {
-  color: #FFFFFF;
-  font-size: 20px;
-  width: 60%;
-  margin: auto;
+.contact-form .fullform .row100 {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.contact-form .fullform .row100 .col {
+  position: relative;
+  width: 100%;
+  padding: 0 10px;
+  margin: 50px 0 10px;
+  transition: 0.5s;
+}
+.contact-form .fullform .row100 .inputBox {
+  position: relative;
+  width: 100%;
+  height: 40px;
+}
+.contact-form .fullform .row100 .inputBox .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
   letter-spacing: 1px;
-  padding-bottom: 2%;
+  color: #2D0404;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: block;
+  transition: 0.5s;
+  pointer-events: none;
 }
-.contactus form {
-  padding-top: 2%;
-  padding-bottom: 5%;
+.contact-form .fullform .row100 .inputBox .line {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #F45366;
+  transition: 0.5s;
+  border-radius: 2px;
+  pointer-events: none;
 }
-.contactus form .input-form {
-  border: 1px solid #FFFFFF !important;
-  border-radius: 0.25rem;
-}
-.contactus form textarea, .contactus form input {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  letter-spacing: 1px;
-  font-size: 14px;
-}
-.contactus form .btn-form {
-  background-image: linear-gradient(to right, #2182f1, #F45366, #e2c12f);
-  color: #FFFFFF;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 700;
-  letter-spacing: 2px;
-  font-size: 14px;
-  padding: 1.5% 4%;
-  border-color: #FFFFFF;
+.contact-form .fullform .row100 .inputBox .textarea {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding: 10px 0;
 }
 
+.fullform .row100 .inputBox input,
+.fullform .row100 .inputBox.textarea textarea {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 0 10px;
+  z-index: 1;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.fullform .row100 .inputBox input:focus + .text,
+.fullform .row100 .inputBox input:valid + .text {
+  top: -35px;
+  left: -10px;
+}
+
+.fullform .row100 .inputBox input:focus ~ .line,
+.fullform .row100 .inputBox input:valid ~ .line {
+  height: 100%;
+}
+
+.fullform .row100 .inputBox.textarea textarea {
+  height: 100%;
+  resize: none;
+}
+
+.fullform .row100 .inputBox textarea:focus + .text,
+.fullform .row100 .inputBox textarea:valid + .text {
+  top: -35px;
+  left: -10px;
+}
+
+.fullform .row100 .inputBox textarea:focus ~ .line,
+.fullform .row100 .inputBox textarea:valid ~ .line {
+  height: 100%;
+}
+
+.btnform-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1% !important;
+  padding-bottom: 10% !important;
+}
+
+.btnform {
+  border: none;
+  padding: 12px 35px;
+  cursor: pointer;
+  outline: none;
+  background-image: linear-gradient(to right, #2182f1, #F45366, #e2c12f);
+  color: #FFFFFF;
+  border-color: none;
+  font-size: 16px;
+  border-radius: 6px;
+  letter-spacing: 2px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: normal;
+}
+
+.btnform:hover {
+  background: #F45366;
+}
+
+/*Fin form Section*/
 /* Media queries de tamaño tablet o menos*/
 @media (max-width: 768px) {
   .banner-h1 {
@@ -206,8 +302,8 @@
   }
 
   .banner-full {
-    background-color: #F45366;
-    color: #FFFFFF;
+    background: url(../imagenes/ayudar_banner-sm.png) no-repeat center;
+    background-size: cover;
   }
 
   .boton-body {
@@ -495,7 +591,7 @@ footer .simple-footer p {
 /*-- Estilo de secciones de iniciativa --*/
 .cols-home2 {
   height: 100%;
-  background: url(../imagenes/banner.svg) no-repeat center;
+  background: url(../imagenes/banner_home.png) no-repeat center;
   background-size: cover;
 }
 
@@ -521,13 +617,13 @@ footer .simple-footer p {
 
 .cols-home3 {
   height: 100%;
-  background: url(../imagenes/gif-iniciativa.gif) no-repeat center;
+  background: url(../imagenes/index_2section.png) no-repeat center;
   background-size: cover;
 }
 
 .cols-home4 {
   height: 100%;
-  background: url(../imagenes/banner.svg) no-repeat center;
+  background: url(../imagenes/index_3section.png) no-repeat center;
   background-size: cover;
 }
 
@@ -583,7 +679,8 @@ footer .simple-footer p {
   }
 
   .banner-home {
-    background: #F45366;
+    background: url(../imagenes/banner_home-sm.png) no-repeat center;
+    background-size: cover;
   }
 
   .home1-section {
@@ -671,7 +768,7 @@ footer .simple-footer p {
 /*Breakpoints*/
 /* Banner principal personas, elementos centrados*/
 .banner-fullp {
-  background: url(../imagenes/nocolor-big.svg) no-repeat center;
+  background: url(../imagenes/nocolor-big.png) no-repeat center;
   background-size: cover;
   background-color: #F6F6F6;
 }
@@ -815,7 +912,7 @@ footer .simple-footer p {
   }
 
   .banner-fullp {
-    background: url(../imagenes/nocolor-medium.svg) no-repeat center;
+    background: url(../imagenes/nocolor-medium.png) no-repeat center;
     background-size: cover;
     background-color: #F6F6F6;
   }
@@ -862,7 +959,7 @@ footer .simple-footer p {
   }
 
   .banner-fullp {
-    background: #8753F4;
+    background: url(../imagenes/nocolor-sm.png) no-repeat center;
   }
 
   .banner-h1p {
@@ -977,42 +1074,43 @@ footer .simple-footer p {
   padding-right: 8% !important;
 }
 
-/* Inicio Glosario*/
-.glosario-content {
-  padding-top: 9%;
-  margin: 0px 70px 70px 70px;
+/* Inicio Glosario
+.glosario-content{
+    padding-top: 9%;
+    margin: 0px 70px 70px 70px;
 }
 
 .title-glo {
-  font-weight: bolder;
-  font-size: 3.2rem;
-  color: #2D0404;
-  letter-spacing: 1px;
-  text-align: center;
-  padding-bottom: 5%;
+    font-weight: bolder;
+	font-size: 3.2rem;
+    color: #2D0404;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-bottom: 5%;
 }
 
 .grid-glo {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 30px;
-  align-items: center;
-  padding-bottom: 3%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    align-items: center;
+    padding-bottom: 3%;
 }
 
 .grid-glo .termino {
-  background: white;
+  background: rgb(255, 255, 255);
   border: none;
   box-shadow: none;
   border-radius: 20px;
   text-align: center;
   width: 250px;
-  transition: transform 0.3s;
+  transition: transform .3s;
 }
 
-.grid-glo .termino:hover {
+.grid-glo .termino:hover  {
   transform: translateY(5px);
   box-shadow: 2px 2px 26px 0px rgba(0, 0, 0, 0.151);
+
 }
 
 .grid-glo .termino img {
@@ -1036,16 +1134,85 @@ footer .simple-footer p {
 }
 
 .texto p {
-  color: #717171;
+  color: $gray;
   letter-spacing: 0.6px;
   line-height: 22px;
   font-size: 14px;
   font-weight: normal;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   padding-top: 3%;
 }
+Fin Glosario */
+.row {
+  margin: 0;
+}
 
-/* Fin Glosario */
+.lado1 {
+  background: #F45366;
+  position: static;
+}
+.lado1 .cont-terms1 {
+  padding-top: 28% !important;
+  padding-left: 10% !important;
+  padding-right: 15% !important;
+}
+.lado1 .cont-terms1 .title-terms1 {
+  font-size: 30px;
+  color: white;
+}
+.lado1 .cont-terms1 .textagain {
+  padding-top: 10%;
+  padding-bottom: 15%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+}
+.lado1 .cont-terms1 .btn-terms {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 14px;
+  padding: 2% 4%;
+}
+.lado1 .cont-terms1 .btn-terms:hover {
+  background-image: linear-gradient(to right, #2182f1, #F45366, #e2c12f);
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+.lado2 {
+  background: #f0f0f0;
+}
+.lado2 .terms1-content {
+  padding-left: 4%;
+  padding-right: 3%;
+}
+
+.section-homeh2 {
+  padding-top: 30%;
+}
+
+.myhover1 {
+  padding-top: 22%;
+}
+
+.myhover {
+  font-size: 28px;
+}
+
+.hide {
+  display: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+}
+
+.myhover:hover + .hide {
+  display: block;
+  color: black;
+}
+
 body {
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   box-sizing: content-box;
