@@ -74,12 +74,30 @@
   height: 100%;
   background: url(../imagenes/index_2section.png) no-repeat center;
   background-size: cover;
+  animation: move 1.4s infinite ease-in-out alternate; 
+}
+@keyframes move {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-20px);
+  }     
 }
 
 .cols-home4 {
   height: 100%;
   background: url(../imagenes/index_3section.png) no-repeat center;
   background-size: cover;
+  animation: move 1.4s infinite ease-in-out alternate; 
+}
+@keyframes move {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-20px);
+  }     
 }
 
 .btn-home1 {
