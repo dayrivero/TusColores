@@ -1,0 +1,249 @@
+@import '../base/mixin';
+@import '../base/maps';
+@import '../base/condicion';
+@import '../base/variables';
+
+/*Banner*/
+.banner-glosario {
+    background-color: #9D2B47;
+  }
+  
+  .cols-glos {
+    padding: 0px 0px;
+  }
+  
+  .cols2-glos {
+    height: 100%;
+    background: url(../imagenes/glosario-banner.png) no-repeat center;
+    background-size: cover;
+  }
+  
+  .cont-bannerg {
+    padding-left: 18% !important;
+    padding-right: 8% !important;
+  }
+  
+  .cont-bannerg h1 {
+    color:#9D2B47;
+    font-size: 42px !important;
+    padding-bottom: 10%;
+    padding-top: 10%;
+      position: relative;
+      animation-name: example;
+      animation-duration: 3s;  
+      animation-fill-mode: forwards;
+    }
+    
+    @keyframes example {
+      from {right: 100px;}
+      to {right: 0px; color: #ffffff;}
+    }
+  
+  .btn-glos {
+    color: #ffffff;
+    border-color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 14px;
+    padding: 2% 4%;
+  }
+  
+  .btn-glos:hover {
+    background-image: linear-gradient(to right, #2182f1, #F45366, #e2c12f);
+    color: white;
+    border-color: #9D2B47;
+  }
+  
+  .cont-titleg h1{
+    color: #2D0404;
+    font-size: 38px !important;
+    padding-bottom: 12%;
+    padding-top: 16%;
+    line-height: 50px;
+    letter-spacing: 1px;
+  }
+  
+  .cont-titleg {
+    padding-left: 18% !important;
+    padding-right: 8% !important;
+  }
+
+/*Términos*/
+.glosario-text-content {
+  .glo-text-cont {
+    padding-left: 8%;
+    width: 50%;
+    .glosario-h2 {
+      padding-top: 16%;
+      padding-bottom: 12%;
+      font-size: 40px;
+      color: $brown;
+      margin: 0;
+    }
+  }
+}
+
+/*Términos Fila 1 y 2*/
+.terms-glo {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  .card-content {
+    position: relative;
+    width: 270px;
+    height: 320px;
+    background: white;
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(128, 128, 128, 0.2);
+    transition: 0.5s;
+    .number {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      h2{
+        color: rgb(230, 230, 230);
+        font-size: 20px;
+        padding: 15% 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: normal;
+        letter-spacing: 2px;
+      }
+    }
+  }
+  .content-glo-down{
+    position: relative;
+    bottom: 80%;
+    padding: 20px;
+    text-align: center;
+    .termino-word,
+    .termino-word2,
+    .termino-word3 {
+      font-size: 22px;
+      color: $brown;
+      padding-top: 1%;
+    }
+    .termino-text {
+      color: $gray;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 14px;
+      padding-top: 6%;
+    }
+  }
+}
+.terms-glo:hover .card-content {
+  filter: blur(5px);
+  transform: scale(0.9);
+  opacity: 0.5;
+}
+.terms-glo .card-content:hover {
+  filter: blur(0px);
+  transform: scale(1);
+  opacity: 1;
+}
+.terms-glo .card-content:nth-child(1) .termino-word {
+  color: $pink;
+}
+.terms-glo .card-content:nth-child(2) .termino-word {
+  color: $green;
+}
+.terms-glo .card-content:nth-child(3) .termino-word {
+  color: $purple;
+}
+.terms-glo .card-content:nth-child(4) .termino-word {
+  color: $yellow;
+}
+.terms-glo .card-content:nth-child(1) .termino-word2 {
+  color: $blue;
+}
+.terms-glo .card-content:nth-child(2) .termino-word2 {
+  color: $yellow;
+}
+.terms-glo .card-content:nth-child(3) .termino-word2 {
+  color: $pink;
+}
+.terms-glo .card-content:nth-child(4) .termino-word2 {
+  color: $purple;
+}
+/*Términos Fila 3*/
+.terms-glo3 {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 8%;
+  .card-content3 {
+    position: relative;
+    width: 270px;
+    height: 320px;
+    background: white;
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(128, 128, 128, 0.2);
+    transition: 0.5s;
+    .number {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      h2{
+        color: rgb(230, 230, 230);
+        font-size: 20px;
+        padding: 15% 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: normal;
+        letter-spacing: 2px;
+      }
+    }
+  }
+  .content-glo-down3{
+    position: relative;
+    bottom: 80%;
+    padding: 20px;
+    text-align: center;
+    .termino-word,
+    .termino-word2,
+    .termino-word3 {
+      font-size: 22px;
+      color: $brown;
+      padding-top: 1%;
+    }
+    .termino-text {
+      color: $gray;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 14px;
+      padding-top: 6%;
+    }
+  }
+}
+.terms-glo3:hover .card-content3 {
+  filter: blur(5px);
+  transform: scale(0.9);
+  opacity: 0.5;
+}
+.terms-glo3 .card-content3:hover {
+  filter: blur(0px);
+  transform: scale(1);
+  opacity: 1;
+}
+.terms-glo3 .card-content3:nth-child(1) .termino-word3 {
+  color: $yellow;
+}
+.terms-glo3 .card-content3:nth-child(2) .termino-word3 {
+  color: $pink;
+}
+.terms-glo3 .card-content3:nth-child(3) .termino-word3 {
+  color: $blue;
+}
+.terms-glo3 .card-content3:nth-child(4) .termino-word3 {
+  color: $green;
+}
