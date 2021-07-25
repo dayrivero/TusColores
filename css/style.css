@@ -1306,7 +1306,7 @@ footer .simple-footer p {
 /* Media queries de tamaño tablet o menos*/
 @media (max-width: 740px) {
   .banner-glo {
-    background: url(../imagenes/banner_home-sm.png) no-repeat center;
+    background: url(../imagenes/banner_glosario-sm.png) no-repeat center;
     background-size: cover;
   }
 
