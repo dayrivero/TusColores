@@ -77,6 +77,19 @@
   padding-bottom: 10%;
   padding-top: 10%;
   color: #2D0404;
+  animation: slide_left 0.5s linear forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+@keyframes slide_left {
+  0% {
+    transform: translateX(-32px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 .banner-full .banner1-ayudar .cont-banner .boton-body {
   color: #2D0404;
@@ -98,8 +111,17 @@
   height: 100%;
   background: url(../imagenes/ayudar_banner.png) no-repeat center;
   background-size: cover;
+  animation: move 1.4s infinite ease-in-out alternate;
 }
 
+@keyframes move {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
 /*Sección informativa cómo ayudar*/
 /*Lado izquierdo*/
 .pasos-ayudar {
@@ -586,15 +608,37 @@ footer .simple-footer p {
   font-size: 40px;
   padding-bottom: 10%;
   padding-top: 10%;
+  animation: slide_left 0.5s linear forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+@keyframes slide_left {
+  0% {
+    transform: translateX(-32px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
-/*-- Estilo de secciones de iniciativa --*/
 .cols-home2 {
   height: 100%;
   background: url(../imagenes/banner_home.png) no-repeat center;
   background-size: cover;
+  animation: move 1.4s infinite ease-in-out alternate;
 }
 
+@keyframes move {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+/*-- Estilo de secciones de iniciativa --*/
 .cont-sectionh {
   padding-left: 18% !important;
   padding-right: 16% !important;
@@ -785,6 +829,19 @@ footer .simple-footer p {
   width: 50%;
   margin: auto;
   color: #2D0404;
+  animation: slide_down 0.5s linear forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+@keyframes slide_down {
+  0% {
+    transform: translateY(-32px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 .banner-fullp .banner1-per .cont-bannerp .btn-banner-per {
   padding-left: 45%;
@@ -1004,76 +1061,36 @@ footer .simple-footer p {
 /*Fonts sizes*/
 /*Colors*/
 /*Breakpoints*/
-/*Banner*/
-.banner-glosario {
-  background-color: #9D2B47;
-}
-
-.cols-glos {
+/*-- Banner Estilo --*/
+.cols-glo {
   padding: 0px 0px;
 }
+.cols-glo .cont-bannerglo {
+  padding-left: 18% !important;
+  padding-right: 8% !important;
+}
+.cols-glo .cont-bannerglo .banner-glo1 {
+  color: #2D0404;
+  font-size: 40px;
+  padding-bottom: 10%;
+  padding-top: 10%;
+}
 
-.cols2-glos {
+.cols-glo2 {
   height: 100%;
   background: url(../imagenes/glosario-banner.png) no-repeat center;
   background-size: cover;
+  animation: move 1.4s infinite ease-in-out alternate;
 }
 
-.cont-bannerg {
-  padding-left: 18% !important;
-  padding-right: 8% !important;
-}
-
-.cont-bannerg h1 {
-  color: #9D2B47;
-  font-size: 42px !important;
-  padding-bottom: 10%;
-  padding-top: 10%;
-  position: relative;
-  animation-name: example;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes example {
+@keyframes move {
   from {
-    right: 100px;
+    transform: translateY(0px);
   }
   to {
-    right: 0px;
-    color: #ffffff;
+    transform: translateY(-20px);
   }
 }
-.btn-glos {
-  color: #ffffff;
-  border-color: #ffffff;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 500;
-  letter-spacing: 2px;
-  font-size: 14px;
-  padding: 2% 4%;
-}
-
-.btn-glos:hover {
-  background-image: linear-gradient(to right, #2182f1, #F45366, #e2c12f);
-  color: white;
-  border-color: #9D2B47;
-}
-
-.cont-titleg h1 {
-  color: #2D0404;
-  font-size: 38px !important;
-  padding-bottom: 12%;
-  padding-top: 16%;
-  line-height: 50px;
-  letter-spacing: 1px;
-}
-
-.cont-titleg {
-  padding-left: 18% !important;
-  padding-right: 8% !important;
-}
-
 /*Términos*/
 .glosario-text-content .glo-text-cont {
   padding-left: 8%;
@@ -1268,6 +1285,41 @@ footer .simple-footer p {
   color: #1AC63F;
 }
 
+/* Media queries de tamaño tablet o menos*/
+@media (max-width: 740px) {
+  .banner-glo {
+    background: url(../imagenes/banner_home-sm.png) no-repeat center;
+    background-size: cover;
+  }
+
+  .banner-glo1 {
+    font-size: 32px !important;
+    color: #FFFFFF !important;
+  }
+}
+/* Tamaño tablet o compus pequeñas */
+@media (max-width: 992px) {
+  .banner-glo1 {
+    font-size: 32px !important;
+  }
+
+  .cols-glo2 {
+    background: url(../imagenes/flag.svg) no-repeat center;
+    background-size: cover;
+  }
+
+  .glo-text-cont {
+    width: 70% !important;
+    padding-top: 12%;
+    padding-bottom: 6% !important;
+    padding-left: 14% !important;
+  }
+  .glo-text-cont .glosario-h2 {
+    font-size: 32px !important;
+    padding-bottom: 2% !important;
+    padding-top: 0 !important;
+  }
+}
 body {
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   box-sizing: content-box;

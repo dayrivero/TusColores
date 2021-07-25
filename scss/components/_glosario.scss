@@ -3,71 +3,36 @@
 @import '../base/condicion';
 @import '../base/variables';
 
-/*Banner*/
-.banner-glosario {
-    background-color: #9D2B47;
-  }
-  
-  .cols-glos {
-    padding: 0px 0px;
-  }
-  
-  .cols2-glos {
-    height: 100%;
-    background: url(../imagenes/glosario-banner.png) no-repeat center;
-    background-size: cover;
-  }
-  
-  .cont-bannerg {
+/*-- Banner Estilo --*/
+.cols-glo {
+  padding: 0px 0px;
+
+  .cont-bannerglo {
     padding-left: 18% !important;
     padding-right: 8% !important;
-  }
-  
-  .cont-bannerg h1 {
-    color:#9D2B47;
-    font-size: 42px !important;
-    padding-bottom: 10%;
-    padding-top: 10%;
-      position: relative;
-      animation-name: example;
-      animation-duration: 3s;  
-      animation-fill-mode: forwards;
+
+    .banner-glo1 {
+      color: $brown;
+      font-size: $h1-d;
+      padding-bottom: 10%;
+      padding-top: 10%;
     }
-    
-    @keyframes example {
-      from {right: 100px;}
-      to {right: 0px; color: #ffffff;}
-    }
-  
-  .btn-glos {
-    color: #ffffff;
-    border-color: #ffffff;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 500;
-    letter-spacing: 2px;
-    font-size: 14px;
-    padding: 2% 4%;
   }
-  
-  .btn-glos:hover {
-    background-image: linear-gradient(to right, #2182f1, #F45366, #e2c12f);
-    color: white;
-    border-color: #9D2B47;
+}
+.cols-glo2 {
+  height: 100%;
+  background: url(../imagenes/glosario-banner.png) no-repeat center;
+  background-size: cover;
+  animation: move 1.4s infinite ease-in-out alternate;      
+}
+@keyframes move {
+  from {
+    transform: translateY(0px);
   }
-  
-  .cont-titleg h1{
-    color: #2D0404;
-    font-size: 38px !important;
-    padding-bottom: 12%;
-    padding-top: 16%;
-    line-height: 50px;
-    letter-spacing: 1px;
+  to {
+    transform: translateY(-20px);
   }
-  
-  .cont-titleg {
-    padding-left: 18% !important;
-    padding-right: 8% !important;
-  }
+}
 
 /*Términos*/
 .glosario-text-content {
@@ -246,4 +211,41 @@
 }
 .terms-glo3 .card-content3:nth-child(4) .termino-word3 {
   color: $green;
+}
+
+/* Media queries de tamaño tablet o menos*/
+@media (max-width: 740px) {
+  .banner-glo {
+    background: url(../imagenes/banner_home-sm.png) no-repeat center;
+    background-size: cover;
+  }
+  .banner-glo1 {
+    font-size: 32px !important;
+    color: $white !important;
+  }
+
+}
+
+/* Tamaño tablet o compus pequeñas */
+@media (max-width: 992px) {
+
+  .banner-glo1 {
+    font-size: 32px !important;
+  }
+  .cols-glo2 {
+    background: url(../imagenes/flag.svg) no-repeat center;
+    background-size: cover;
+  }
+  .glo-text-cont {
+    width: 70% !important;
+    padding-top: 12%;
+    padding-bottom: 6% !important;
+    padding-left: 14% !important;
+    .glosario-h2 {
+      font-size: 32px !important;
+      padding-bottom: 2% !important;
+      padding-top: 0 !important;
+    }
+  }
+
 }

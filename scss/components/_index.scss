@@ -16,17 +16,38 @@
         font-size: $h1-d;
         padding-bottom: 10%;
         padding-top: 10%;
+        animation: slide_left 0.5s linear forwards;
+        animation-delay: 0.2s;
+        opacity: 0;
+      }
+      @keyframes slide_left {
+        0% {
+            transform: translateX(-32px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
       }
     }
 }
-
-/*-- Estilo de secciones de iniciativa --*/
 .cols-home2 {
   height: 100%;
   background: url(../imagenes/banner_home.png) no-repeat center;
-  background-size: cover;      
+  background-size: cover;
+  animation: move 1.4s infinite ease-in-out alternate;      
+}
+@keyframes move {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-20px);
+  }     
 }
 
+/*-- Estilo de secciones de iniciativa --*/
 .cont-sectionh {
   padding-left: 18% !important;
   padding-right: 16% !important;

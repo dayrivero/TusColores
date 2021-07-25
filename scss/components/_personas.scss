@@ -23,6 +23,19 @@
                 width: 50%;
                 margin: auto;
                 color: $brown;
+                animation: slide_down 0.5s linear forwards;
+                animation-delay: 0.2s;
+                opacity: 0;
+            }
+            @keyframes slide_down {
+              0% {
+                  transform: translateY(-32px);
+                  opacity: 0;
+              }
+              100% {
+                  transform: translateY(0);
+                  opacity: 1;
+              }
             }
             .btn-banner-per {
               padding-left: 45%;
